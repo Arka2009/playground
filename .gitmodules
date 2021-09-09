@@ -113,5 +113,5 @@
 	url = git@github.com:ucb-bar/maltese-smt.git
 [submodule "diplomatictester"]
 	path = diplomatictester
-	url = https://github.com/sequencer/diplomatictester.git
+	url = git@github.com:Arka2009/diplomatictester.git
 	branch = mill
