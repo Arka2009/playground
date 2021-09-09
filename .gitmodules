@@ -111,3 +111,7 @@
 [submodule "dependencies/maltese-smt.git"]
 	path = dependencies/maltese-smt
 	url = git@github.com:ucb-bar/maltese-smt.git
+[submodule "diplomatictester"]
+	path = diplomatictester
+	url = https://github.com/sequencer/diplomatictester.git
+	branch = mill

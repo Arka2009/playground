@@ -408,8 +408,8 @@ object spike extends Module {
 
 // Dummy
 
-object playground extends CommonModule {
-  override def moduleDeps = super.moduleDeps ++ Seq(myrocketchip, inclusivecache, blocks, rocketdsputils, shells, firesim, boom, chipyard, chipyard.fpga, chipyard.utilities, mychiseltest)
+object diplomatictester extends CommonModule {
+  override def moduleDeps = super.moduleDeps ++ Seq(myrocketchip,mychiseltest)
 
   // add some scala ivy module you like here.
   override def ivyDeps = Agg(
