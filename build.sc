@@ -409,6 +409,8 @@ object spike extends Module {
 // Dummy
 
 object diplomatictester extends CommonModule {
+  // TODO: FIX
+  override def scalacOptions = Seq("-Xsource:2.11")
   override def moduleDeps = super.moduleDeps ++ Seq(myrocketchip,mychiseltest)
 
   // add some scala ivy module you like here.
