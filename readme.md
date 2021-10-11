@@ -19,9 +19,23 @@ This repository always tracks remote developing branches, it may need some patch
 <!-- BEGIN-PATCH -->
 rocket-chip https://github.com/chipsalliance/rocket-chip/pull/2810  
 hwacha https://github.com/ucb-bar/hwacha/pull/30  
-testchipip https://github.com/ucb-bar/testchipip/pull/126  
 fpga-shells https://github.com/sifive/fpga-shells/pull/161  
 fpga-shells https://github.com/sifive/fpga-shells/pull/162  
+maltese-smt https://github.com/ucb-bar/maltese-smt/pull/2  
+testchipip https://github.com/ucb-bar/testchipip/pull/137  
+rocket-dsp-utils https://github.com/ucb-bar/rocket-dsp-utils/pull/4  
+rocket-chip https://github.com/chipsalliance/rocket-chip/pull/2889  
+riscv-boom https://github.com/riscv-boom/riscv-boom/pull/565  
+dsptools https://github.com/ucb-bar/dsptools/pull/237  
+chisel-testers https://github.com/freechipsproject/chisel-testers/pull/320  
+berkeley-hardfloat https://github.com/ucb-bar/berkeley-hardfloat/pull/60  
+icenet https://github.com/firesim/icenet/pull/32  
+firesim https://github.com/firesim/firesim/pull/843  
+hwacha https://github.com/ucb-bar/hwacha/pull/33  
+chipyard https://github.com/ucb-bar/chipyard/pull/1001  
+riscv-sodor https://github.com/ucb-bar/riscv-sodor/pull/67  
+gemmini https://github.com/ucb-bar/gemmini/pull/150   
+rocket-chip https://github.com/chipsalliance/rocket-chip/pull/2890    
 <!-- END-PATCH -->
 
 ## Why not Chipyard
