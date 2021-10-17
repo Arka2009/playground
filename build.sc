@@ -402,16 +402,16 @@ object spike extends Module {
   override def millSourcePath = os.pwd / "dependencies" / "riscv-isa-sim"
   // ask make to cache file.
   def compile = T.persistent {
+    println(s"Build Directory ${T.ctx.dest}")
     os.proc(millSourcePath / "configure", "--prefix", "/usr").call(
-      T.ctx.dest, Map("CC" -> "clang", "CXX" -> "clang++")
+      T.ctx.dest, Map("CC" -> "gcc", "CXX" -> "g++")
     )
     os.proc("make", "-j", Runtime.getRuntime().availableProcessors()).call(T.ctx.dest)
     T.ctx.dest
   }
 }
 
-// Dummy
-
+// Testers for diplomatic objects
 object diplomatictester extends CommonModule {
   // TODO: FIX
   override def scalacOptions = Seq("-Xsource:2.11")
@@ -430,4 +430,16 @@ object diplomatictester extends CommonModule {
     )
     override def moduleDeps = super.moduleDeps ++ Seq(mychiseltest)
   }
+}
+
+object hwbehaviour extends CommonModule {
+  override def scalacOptions = Seq("-Xsource:2.11")
+  override def moduleDeps = super.moduleDeps ++ Seq(myrocketchip,mychiseltest,iotesters)
+
+  object test extends Tests{
+    def ivyDeps = Agg(ivy"com.lihaoyi::utest:0.7.4")
+    def testFrameworks = Seq("utest.runner.Framework")
+    override def moduleDeps = super.moduleDeps ++ Seq(myrocketchip,mychiseltest,iotesters)
+  }
+  
 }
